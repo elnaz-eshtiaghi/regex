@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: gr;
+  src: url(../font/GreatVibes-Regular.ttf);
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main {
+  background-color: #eb3370;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main > section {
+  width: 30%;
+  border: 1px solud wheat;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+main > section .panda {
+  position: relative;
+}
+main > section .ear {
+  position: absolute;
+  width: 200px;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+}
+main > section .ear div {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main > section .ear div > div {
+  width: 45px;
+  height: 45px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+}
+main > section .face {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+  padding: 40px 20px;
+  justify-content: space-around;
+  position: relative;
+  z-index: 1;
+}
+main > section .face > div {
+  width: 50px;
+  height: 80px;
+  background-color: black;
+  border-radius: 200px;
+}
+main > section .face > div > div {
+  width: 30px;
+  height: 30px;
+  margin: 40px auto;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main > section .face > div > div > div {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%;
+}
+main > section .face > div:nth-of-type(1) {
+  transform: rotate(45deg);
+}
+main > section .face > div:nth-of-type(2) {
+  transform: rotate(-45deg);
+}
+main > section .face > div:nth-of-type(3) {
+  width: 100%;
+  background-color: transparent;
+}
+main > section .face > div:nth-of-type(3) > div {
+  margin: 10px auto;
+  width: 50px;
+  height: 40px;
+  background-color: black;
+  border-radius: 100px;
+  justify-content: space-around;
+}
+main > section .face > div:nth-of-type(3) > div > div {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(51, 51, 51);
+}
+main > section .body {
+  background-color: white;
+  height: 290px;
+  width: 250px;
+  border-radius: 100px;
+  transform: translatex(-22px);
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.267);
+}
+main > section .form-counter {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 59%;
+  left: 100px;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+main > section .form-counter .form {
+  background-color: rgb(255, 255, 255);
+  transition: 1s;
+  width: 400px;
+  height: 320px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.267);
+  text-transform: capitalize;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding: 30px;
+}
+main > section .form-counter .form form {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+}
+main > section .form-counter .form form > * {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main > section .form-counter .form h1 {
+  font-family: gr;
+  color: #eb3370;
+  font-size: 2rem;
+  text-align: center;
+}
+main > section .form-counter .form strong {
+  color: #eb3370;
+  font-size: 0.8rem;
+  display: none;
+  width: 100%;
+  text-align: start;
+}
+main > section .form-counter .form span {
+  position: absolute;
+  right: 5px;
+  top: 160px;
+  cursor: pointer;
+}
+main > section .form-counter .form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid rgb(92, 92, 92);
+  background-color: transparent;
+  height: 30px;
+  color: rgb(92, 91, 91);
+  font-size: 1rem;
+  margin: 10px 0;
+}
+main > section .form-counter .form button {
+  width: 45%;
+  height: 30px;
+  background-color: #eb3370;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.7s;
+  position: relative;
+  z-index: 10;
+}
+main > section .form-counter .form button:hover {
+  border: 1px solid #eb3370;
+  background-color: white;
+  color: #eb3370;
+}
+main > section .form-counter .form label {
+  display: none;
+  font-size: 0.8rem;
+  text-align: start;
+}
+main > section .form-counter .form .line {
+  transition: 1s;
+}
+main > section .form-counter .foot {
+  width: 340px;
+  justify-content: space-between;
+  bottom: -20%;
+}
+main > section .form-counter .foot > div {
+  background-color: black;
+  width: 80px;
+  height: 120px;
+  border-radius: 50% 50% 50px 50px;
+  transform: translate(32px);
+  padding: 5px;
+  align-items: end;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.267);
+  position: absolute;
+  z-index: 3;
+  bottom: -50px;
+}
+main > section .form-counter .foot > div:nth-of-type(2) {
+  right: 60px;
+}
+main > section .form-counter .foot > div:nth-of-type(2) > span:nth-of-type(1) {
+  width: 25px;
+  height: 35px;
+}
+main > section .form-counter .foot > div:nth-of-type(2) > span:nth-of-type(3) {
+  width: 15px;
+  height: 25px;
+}
+main > section .form-counter .foot > div > span {
+  background-color: rgb(51, 51, 51);
+  border-radius: 50%;
+  display: flex;
+  margin: 1px;
+}
+main > section .form-counter .foot > div > span:nth-of-type(3) {
+  width: 25px;
+  height: 35px;
+}
+main > section .form-counter .foot > div > span:nth-of-type(2) {
+  width: 20px;
+  height: 30px;
+}
+main > section .form-counter .foot > div > span:nth-of-type(1) {
+  width: 15px;
+  height: 25px;
+}
+main > section .form-counter .foot > div > div {
+  width: 67px;
+  height: 67px;
+  border-radius: 50%;
+  background-color: rgb(39, 39, 39);
+}
+main > section .form-counter .hand {
+  justify-content: space-between;
+  width: 110%;
+  position: absolute;
+  top: 50%;
+  left: -5%;
+}
+main > section .form-counter .hand > div > span {
+  width: 30px;
+  height: 15px;
+  border-radius: 50px;
+  background-color: black;
+  display: flex;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.267);
+}/*# sourceMappingURL=master.css.map */
